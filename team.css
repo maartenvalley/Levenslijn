@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: url("assets/background_ori_team.png");
+    background-size: cover;
+}
+
+/*Navbar*/
+.nav-item{
+    list-style: none;
+}
+.overons_nav {
+    color: #81b29a  ;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #81b29a;
+}
+.btn-nav{
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    height: 30px;
+}
+.download_knop {
+    color: #ffffff;
+    background-color: #3C405B;
+    border-radius: 60px;
+    padding: 10px 15px;
+}
+.download_knop:hover {
+    color: #DF7A5E;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+nav .d-flex {
+    display: flex;
+    justify-content: right;
+}
+.navbar-toggler {
+    border: transparent;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.kleur_icon {
+    color: #DF7A5E;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: right;
+}
+a:hover{
+    text-decoration: none;
+    color: #81b29a;
+}
+.navbar-brand{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.container-fluid {
+    padding: 0 30px;
+    margin: 0;
+}
+.navbar-collapse {
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0.4);
+    position: fixed;
+    z-index: 99;
+    backdrop-filter: blur(8px);
+}
+#nav {
+    width: 40px;
+}
+
+.team {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+.team-content {
+    width: 100%;
+    max-width: 1350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin: 4rem auto 0;
+}
+.team-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.center {
+    color: #81b29a;
+    font-size: 4rem;
+    text-align: center;
+}
+.box {
+    padding: 16px;
+    background: rgba(60, 64, 91, 0.4);
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+.box h3 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.icons i {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+.icons i:hover {
+    transform: scale(1.4);
+}
+.box:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.redbox:hover {
+    background: #e84341;
+    box-shadow: 0 0 30px rgba(232, 67, 65, 0.45);
+}
+.graybox:hover {
+    background-color: #d8d8e4;
+    box-shadow: 0 0 30px rgb(216, 216, 228);
+}
+.blackbox:hover{
+    background-color: #3c3d41;
+    box-shadow: 0 0 30px rgba(60, 61, 65, 0.45);
+}
+.bluebox:hover {
+    background-color: #427cfe;
+    box-shadow: 0 0 30px rgba(66, 124, 254, 0.45);
+}
+.greenbox:hover {
+    background-color: #46d45c;
+    box-shadow: 0 0 30px rgba(70, 212, 92, 0.45);
+}
+.hidden {
+    opacity: 0;
+    transition: all 0.8s;
+    filter: blur(5px);
+    transform: translate(-100%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+.hidden:nth-child(2) {
+    transition-delay: 200ms;
+}
+.hidden:nth-child(3) {
+    transition-delay: 400ms;
+}
+.hidden:nth-child(4) {
+    transition-delay: 600ms;
+}
+.hidden:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #33343f;
+    /*border: 1px solid  #000;*/
+    padding: 0;
+}
+
+.image_footer_1 {
+    width: 50px;
+}
+
+.image_footer_2 {
+    width: 25px;
+}
+
+.background_image_1 {
+    width: 100%;
+}
+
+.py-3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 12px;
+}
+
+ul li img {
+    opacity: 70%;
+}
+
+ul li img:hover {
+    opacity: 100%;
+}
+.tekstf {
+    color: #919193;
+}
+@media (max-width: 1240px){
+    .team{
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+    .center h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        background-color: rgba(232, 232, 232, 0.85);
+
+    }
+}

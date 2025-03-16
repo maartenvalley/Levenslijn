@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body {
+    background-image: url("assets/background_overons.png");
+    background-size: cover;
+}
+/*Navbar*/
+#color {
+    color: #81b29a;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #abccbc;
+}
+.btn-nav{
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    height: 30px;
+}
+nav .d-flex {
+    display: flex;
+    justify-content: right;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: right;
+}
+a:hover{
+    text-decoration: none;
+    color: #abccbc;
+}
+.navbar-brand{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.download_knop {
+    color: #ffffff;
+    background-color: #3C405B;
+    border-radius: 60px;
+    padding: 10px 15px;
+}
+.download_knop:hover {
+    color: #DF7A5E;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.container-fluid {
+    padding: 0 30px;
+    margin: 0;
+}
+.navbar-collapse {
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0.4);
+    position: fixed;
+    z-index: 99;
+    backdrop-filter: blur(8px);
+}
+#nav {
+    width: 40px;
+}
+.navbar-toggler {
+    border: transparent;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.kleur_icon {
+    color: #DF7A5E;
+}
+/* Over ons */
+.hoofding {
+    font-size: 40px;
+    color: #DF7A5E;
+}
+.overons h2 {
+    font-size: 26px;
+    color: #82B29A;
+    padding-top: 70px;
+}
+.foto {
+    width: 100%;
+}
+.tekst {
+    color: #3C405B;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 18px;
+}
+.contact-color {
+    color: #DF7A5E;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+}
+button.contact-color:hover {
+    background-color: #DF7A5E;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+.contact-color2 {
+    color: #81b29a;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+}
+button.contact-color2:hover {
+    background-color: #81b29a;
+    color: #ffffff;
+    transform: scale(1.2);
+}
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translate(-100%);
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+main {
+    padding-top: 3rem;
+}
+
+/*Footer*/
+footer {
+    background-color: #33343f;
+    /*border: 1px solid  #000;*/
+    padding: 0;
+}
+
+.image_footer_1 {
+    width: 50px;
+}
+
+.image_footer_2 {
+    width: 25px;
+}
+
+.background_image_1 {
+    width: 100%;
+}
+
+.py-3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 12px;
+}
+
+ul li img {
+    opacity: 70%;
+}
+
+ul li img:hover {
+    opacity: 100%;
+}
+.tekstf {
+    color: #919193;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url("assets/background_overons_phone.png");
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        background-color: rgba(232, 232, 232, 0.85);
+
+    }
+}

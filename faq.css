@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/*CSS*/
+
+body {
+    background-image: url("assets/achtergrond_faq.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+    color: #82B29A;
+}
+
+h2 {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.vragenlijst div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: "Segoe UI", Verdana,sans-serif;
+}
+
+.vragen:hover {
+    color: #82B29A;
+    cursor: pointer;
+}
+.plusbutton:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.plusbutton {
+    opacity: 70%;
+}
+.leegte {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .leegte {
+        display: block;
+    }
+}
+
+/*Navbar*/
+
+#nav {
+    width: 40px;
+}
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: #abccbc;
+}
+
+.btn-nav{
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    height: 30px;
+}
+.download_knop {
+    color: #ffffff;
+    background-color: #3C405B;
+    border-radius: 60px;
+    padding: 10px 15px;
+}
+.download_knop:hover {
+    color: #DF7A5E;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+nav .d-flex {
+    display: flex;
+    justify-content: right;
+}
+.navbar-toggler {
+    border: transparent;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.kleur_icon {
+    color: #DF7A5E;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: right;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #abccbc;
+}
+
+.navbar-brand{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-fluid {
+    padding: 0 30px;
+    margin: 0;
+}
+.navbar-collapse {
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 900;
+}
+
+.faqkleur {
+    color: #81b29a;
+}
+
+/*Javascript*/
+
+.antwoorden {
+    display: none;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #33343f;
+    /*border: 1px solid  #000;*/
+    padding: 0;
+}
+
+.image_footer_1 {
+    width: 50px;
+}
+
+.image_footer_2 {
+    width: 25px;
+}
+
+.background_image_1 {
+    width: 100%;
+}
+
+.py-3 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 12px;
+}
+
+ul li img {
+    opacity: 70%;
+}
+
+ul li img:hover {
+    opacity: 100%;
+}
+.tekstf {
+    color: #919193;
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        background-color: rgba(232, 232, 232, 0.85);
+
+    }
+}

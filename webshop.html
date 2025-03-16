@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/Middel%201.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="webshop.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Webshop - Ori</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2fb07d68d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+
+                <img id="nav" src="assets/vliegje.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-stream navbar-togler-icon kleur_icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" target="_self" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_self" href="overons.html">Over ons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="producten" class="nav-link producten" target="_self" href="webshop.html">Producten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_self" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_self" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+                <!--!!!!!!!!!!!!!!!AFBLIJVEN!!!!!!!!!!!!!!!!-->
+                <div class="cart-box">
+                    <div class="cart-icon">
+                        <i class="fas fa-cart-arrow-down fa-2x"></i>
+                    </div>
+                    <div class="whole-cart-window hide">
+                        <h2>Winkelmandje</h2>
+                        <div class="cart-wrapper">
+                        </div>
+                        <div class="subtotal">Totaal: €0,00</div>
+                        <div class="checkout"><a class="betalen" href="betaling.html">Betalen</a></div>
+                    </div>
+                </div>
+
+                <section class="shop-section">
+                    <div class="card-wrapper">
+                    </div>
+                </section>
+                <!--!!!!!!!!!!!!!!!TOT HIER AFBLIJVEN!!!!!!!!!!!!!!!!-->
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--!!!!!!!!!!!!!!!AFBLIJVEN!!!!!!!!!!!!!!!!-->
+
+
+<!--      header-->
+<div class="container text-center pt-5">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-8">
+            <h1 class="h1-header pb-3">Doneren</h1><br>
+            <p class="p-header">Wil jij graag jouw steentje bijdragen en anderen steunen.
+                Dit kan aan de hand van steunkaarten te kopen van goede doelen te kopen of door baby spullen te kopen.
+                Al de opbrengsten ervan zullen naar goede doelen gaat. </p>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="assets/MicrosoftTeams-image%20(9).png" alt="Foto doneren" class="img-header">
+        </div>
+    </div>
+</div>
+<!--    product 1-->
+<div class="container">
+    <h2 class="h2-tussentitels pt-5">Ori Producten</h2>
+    <div class="row oriproducten">
+        <div class="col-12 col-md-4">
+            <div data-id="1">
+                <img alt="baby onsie" src="assets/baby%20onsie%20blauw.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Ori romper</h3>
+                    <p class="uitleg">
+                    <span class="uitleg-onsie">
+                      Met het rompertje van Ori zal je baby vredig kunnen slapen.
+                    </span>
+                    </p>
+                    <div class="row">
+                        <div class="col-6 col-md-7">
+                            <span class="price-producten">€9,99</span>
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <select id="aantal-maat" name="aantal" class="custom-select-maten">
+                                <option value="Size">Size</option>
+                                <option value="50">50</option>
+                                <option value="56">56</option>
+                                <option value="62">62</option>
+                                <option value="68">68</option>
+                                <option value="74">74</option>
+                                <option value="80">80</option>
+                                <option value="86">86</option>
+                                <option value="92">92</option>
+                            </select>
+                            <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item 2 -->
+        <div class="col-12 col-md-4">
+            <div data-id="2">
+                <img alt="baby fles en speen" src="assets/baby%20fles.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Ori speen en fles</h3>
+                    <p>
+                      <span class="uitleg">
+                        Met de Ori speen en fles heeft u het ideale pakket voor uw kind.
+                      </span>
+                        <br>
+                        <span class="price-producten">€9,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- product 3 -->
+        <div class="col-12 col-md-4">
+            <div data-id="3">
+                <img alt="bavet" src="assets/bavet.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Ori bavet</h3>
+                    <p>
+                      <span class="uitleg">
+                          Met de de bavet van Ori zullen alle kleren proper blijven.
+                      </span>
+                        <br>
+                        <span class="price-producten">€9,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- product 4 -->
+<div class="container">
+    <h2 class="h2-tussentitels pt-1">Steunkaarten</h2>
+    <div class="row oriproducten">
+        <div class="col-12 col-md-4">
+            <div data-id="4">
+                <img alt="steunkaart feestvarken" src="assets/Feestvarken.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Steunkaart Feestvarken</h3>
+                    <p>
+                      <span class="uitleg">
+                          Feestvarken zorgt voor een leuke verjaardag voor de kansarme kinderen.
+                      </span>
+                        <br>
+                        <span class="price-producten">€4,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- product 5 -->
+        <div class="col-12 col-md-4">
+            <div data-id="5">
+                <img alt="steunkaart baby nest" src="assets/baby-nest.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Steunkaart Baby-Nest</h3>
+                    <p>
+                      <span class="uitleg">
+                          Baby-Nest heeft als doel kansarme moeders een babyuitzet te bezorgen.
+                      </span>
+                        <br>
+                        <span class="price-producten">€4,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- product 6 -->
+        <div class="col-12 col-md-4">
+            <div data-id="6">
+                <img alt="steunkaart kraamvogel" src="assets/kraamvogel.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Steunkaart De Kraamvogel</h3>
+                    <p>
+                      <span class="uitleg">
+                          De Kraamvogel zorgt ervoor dat elk kind een eerlijk geboorte cadeautje krijgt.
+                      </span>
+                        <br>
+                        <span class="price-producten">€4,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product 7 -->
+    <div class="row oriproducten">
+        <div class="col-12 col-md-4">
+            <div data-id="7">
+                <img alt="steunkaart nasci" src="assets/Nasci.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Steunkaart NASCI vzw</h3>
+                    <p>
+                      <span class="uitleg">
+                          NASCI vzw helpt alleenstaande ouders of gezinnen zonder inkomen.
+                      </span>
+                        <br>
+                        <span class="price-producten">€4,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- product 8 -->
+        <div class="col-12 col-md-4">
+            <div data-id="8">
+                <img alt="steunkaart stichting pelicano" src="assets/stichting%20pelicano.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Steunkaart Stichting Pelicano</h3>
+                    <p>
+                      <span class="uitleg">
+                          Stichting Pelicano vecht tegen kinderarmoede.
+                      </span>
+                        <br>
+                        <span class="price-producten">€4,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- product 9 -->
+        <div class="col-12 col-md-4">
+            <div data-id="9">
+                <img alt="steunkaart cig nestel" src="assets/CIG%20nestel.png" class="foto-afronden foto-product"/>
+                <div class="details">
+                    <h3 class="naam-product">Steunkaart CIG Nestel</h3>
+                    <p>
+                      <span class="uitleg">
+                          CIG Nestel zorgt voor begeleiding aan gezinnen waar opvoeding onder druk is.
+                      </span>
+                        <br>
+                        <span class="price-producten">€4,99</span>
+                        <span class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="container pt-0 pb-0">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0">
+            <div class="col-md-4 d-flex align-items-center ">
+            <span class="tekstf">© Privacy & Terms
+      <br>All contents copyright © ORI B.V 2023.<br>All rights reserved.</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com" target="_blank">
+                    <img class="image_footer_2" src="assets/twitter.png" alt="logo_twitter">
+                </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/" target="_blank">
+                    <img class="image_footer_2" src="assets/instagram.png" alt="logo_instagram">
+                </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/" target="_blank">
+                    <img class="image_footer_2" src="assets/facebook.png" alt="logo_facebook">
+                </a></li>
+            </ul>
+        </footer>
+    </div>
+</footer>
+<!--Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<script
+        src="https://kit.fontawesome.com/8f27d68390.js"
+        crossorigin="anonymous"
+></script>
+<script src="webshop.js"></script>
+</body>
+</html>
